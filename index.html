@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Audit Report · Sample Portfolio Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f7fc;
+            color: #1a2c3e;
+            padding: 40px 20px;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: #0f67b3;
+        }
+        .subtitle {
+            color: #475569;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            margin: 30px 0 16px 0;
+            color: #0f172a;
+            border-left: 4px solid #0f67b3;
+            padding-left: 16px;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin: 20px 0 10px;
+            color: #0f172a;
+        }
+        .executive-summary {
+            background: #f0f9ff;
+            padding: 24px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #d9e6f2;
+        }
+        .finding {
+            background: #fffaf0;
+            border-left: 4px solid #e67e22;
+            padding: 16px 20px;
+            margin: 20px 0;
+            border-radius: 16px;
+        }
+        .risk-high { color: #dc2626; font-weight: 700; }
+        .risk-medium { color: #e67e22; font-weight: 700; }
+        .risk-low { color: #16a34a; font-weight: 700; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #f1f5f9;
+            font-weight: 600;
+        }
+        .footer-note {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.8rem;
+            color: #64748b;
+            text-align: center;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 20px; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Network Security Audit & Hardening Report</h1>
+    <div class="subtitle">
+        <strong>Client (Sample):</strong> Chidi's Attorney Company (fictional)<br>
+        <strong>Auditor:</strong> Vernon Baloyi, IT Security Specialist<br>
+        <strong>Audit Date (simulated):</strong> March 2026<br>
+        <strong>Document Version:</strong> 1.0 (Portfolio Sample)
+    </div>
+
+    <div class="executive-summary">
+        <h2 style="margin-top:0; border-left: none; padding-left:0;">📋 Executive Summary</h2>
+        <p>This is a <strong>simulated security assessment</strong> created for portfolio demonstration. It illustrates my approach to network auditing, vulnerability identification, and remediation.</p>
+        <p><strong>Overall Risk Posture (after fixes):</strong> <span class="risk-medium">Medium → Low</span></p>
+        <p><strong>Key Achievements (hypothetical):</strong></p>
+        <ul style="margin-left: 20px;">
+            <li>100% compliance with internal security policies after implemented fixes.</li>
+            <li>All critical vulnerabilities patched within 7 days of report delivery.</li>
+            <li>Staff security awareness training completed for all employees.</li>
+        </ul>
+    </div>
+
+    <h2>1. Scope & Methodology</h2>
+    <p><strong>Included assets (simulated):</strong> 10 workstations, one file server, firewall/router, Wi‑Fi network, and 2 network printers.</p>
+    <p><strong>Tools used:</strong> Wireshark, Nmap, OpenVAS, Metasploit (simulated).</p>
+    <p><strong>Testing approach:</strong> Combination of automated scans and manual verification, conducted after hours to avoid disruption.</p>
+
+    <h2>2. Findings & Risk Assessment (Sample)</h2>
+    <div class="finding">
+        <h3>🔴 FINDING 1: Outdated Router Firmware</h3>
+        <p><strong>Severity:</strong> <span class="risk-high">HIGH</span></p>
+        <p><strong>Description:</strong> The edge router was running an old firmware version with known remote code execution vulnerabilities (CVE‑2023‑12345).</p>
+        <p><strong>Recommendation:</strong> Update firmware to latest stable version. Completed.</p>
+    </div>
+    <div class="finding">
+        <h3>🟠 FINDING 2: Weak Password Policy</h3>
+        <p><strong>Severity:</strong> <span class="risk-medium">MEDIUM</span></p>
+        <p><strong>Description:</strong> Password complexity was not enforced; several weak passwords detected.</p>
+        <p><strong>Recommendation:</strong> Enforce password length (≥12 chars) and MFA. Implemented.</p>
+    </div>
+    <div class="finding">
+        <h3>🟡 FINDING 3: Open SMB Ports on Firewall</h3>
+        <p><strong>Severity:</strong> <span class="risk-low">LOW</span></p>
+        <p><strong>Recommendation:</strong> Remove inbound SMB rule. Completed.</p>
+    </div>
+
+    <h2>3. Remediation Actions (Simulated)</h2>
+    <ul>
+        <li>✅ Firmware updated on router.</li>
+        <li>✅ All workstations patched.</li>
+        <li>✅ Firewall rules audited and cleaned.</li>
+        <li>✅ MFA enabled for administrative accounts.</li>
+        <li>✅ Staff security training delivered.</li>
+    </ul>
+
+    <h2>4. Post‑Remediation Verification</h2>
+    <p>A follow‑up scan confirmed all critical vulnerabilities were mitigated.</p>
+
+    <h2>5. Conclusion</h2>
+    <p>This sample demonstrates my ability to conduct a thorough security audit and provide actionable recommendations. The same methodology is applied in real‑world engagements.</p>
+    <p><strong>Prepared by:</strong><br>
+    Vernon Baloyi<br>
+    IT Security Specialist<br>
+    Google Cybersecurity Certified, CCNA </p>
+
+    <div class="footer-note">
+        ⚠️ This is a <strong>simulated sample report</strong> created for portfolio demonstration purposes only. 
+        It does not contain any confidential client data.<br>
+        © 2026 Vernon Baloyi. All rights reserved.
+    </div>
+</div>
+</body>
+</html>
